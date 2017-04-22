@@ -38,6 +38,8 @@ void selectionSort(int* v, int length) {
 }
 
 void printVect(int* v, int length) {
+	if (!length)
+		return;
 	int i;
 	for (i = 0; i < length - 1; i++)
 		printf("%d, ", v[i]);
